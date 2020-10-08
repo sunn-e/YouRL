@@ -3,33 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <title>YouRL-Hello Universe</title>
   </head>
   <body>
-    <h1>URL Shortner</h1>
-    <form action="" method="POST">
-      <label for="fullurl">URL</label>
-      <input type="url" name="fullurl" id="fullurl" />
-      <button type="submit">Shorten my link!</button>
-    </form>
+    <div class="container">
+      <h1>URL Shortner</h1>
+      <form action="" method="POST" class="my-4 form-inline">
+        <label for="fullurl" class="sr-only">URL</label>
+        <input
+          required
+          placeholder="Enter URL"
+          type="url"
+          name="fullurl"
+          id="fullurl"
+          class="form-control mr-1 col"
+        />
+        <button type="submit" class="btn btn-success">Shorten my link!</button>
+      </form>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Full URL</th>
-          <th>Shortened URL</th>
-          <th>Total Clicks</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a href="https://sunn-e.github.io">https://sunn-e.github.io</a>
-          </td>
-          <td><a href="/420">420</a></td>
-          <td>1</td>
-        </tr>
-      </tbody>
-    </table>
+      <table class="table table-boderless table-responsive">
+        <caption>
+          List of URLs and click counts
+        </caption>
+        <thead>
+          <tr>
+            <th>Full URL</th>
+            <th>Shortened URL</th>
+            <th>Total Clicks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://sunn-e.github.io">https://sunn-e.github.io</a>
+            </td>
+            <td><a href="/420">420</a></td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
