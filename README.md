@@ -19,4 +19,5 @@ ejs- templating language to create views
 ### dev dependencies
 
 `npm i --save-dev nodemon`
+//npm install -g nodemon
 For refreshing server for every new change
