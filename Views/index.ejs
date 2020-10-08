@@ -15,13 +15,13 @@
     <div class="container">
       <h1>URL Shortner</h1>
       <form action="shortUrls" method="POST" class="my-4 form-inline">
-        <label for="fullurl" class="sr-only">URL</label>
+        <label for="fullUrl" class="sr-only">URL</label>
         <input
           required
           placeholder="Enter URL"
           type="url"
-          name="fullurl"
-          id="fullurl"
+          name="fullUrl"
+          id="fullUrl"
           class="form-control mr-1 col"
         />
         <button type="submit" class="btn btn-success">Shorten my link!</button>
@@ -39,13 +39,16 @@
           </tr>
         </thead>
         <tbody>
+          <% shortUrls.forEach(shortUrl => { %>
+
           <tr>
             <td>
-              <a href="https://sunn-e.github.io">https://sunn-e.github.io</a>
+              <a href="<%= shortUrl.full %>"><%= shortUrl.full %></a>
             </td>
-            <td><a href="/420">420</a></td>
-            <td>1</td>
+            <td><a href="<%= shortUrl.short %>"><%= shortUrl.short %> </a></td>
+            <td><%= shortUrl.clicks %></td>
           </tr>
+          <% }) %> });
         </tbody>
       </table>
     </div>
