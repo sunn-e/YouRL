@@ -31,6 +31,7 @@ ejs- Templating language to create views
 
 `npm i --save-dev nodemon`
 
+
 //npm install -g nodemon
 
 `nodemon server.js`
@@ -40,11 +41,14 @@ For refreshing server for every new change. Makes life easy.
 
 tip: Make sure you have admin access
 
+
 - to access db
 
 "C:\Program Files\MongoDB\Server\4.4\bin\mongod.exe" --dbpath="c:\data\db"
 
+
 - to start mongodb server
+
 
 "C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"
 
@@ -58,11 +62,13 @@ tip: Make sure you have admin access
 1. Open any web browser and visit `localhost:4567`
 1. (Optional) If you want to devlop the app,run `nodemon server.js`instead of `node ./server.js`, every new change will be reflected in your browser.
 
+
 ### Heroku
 
 1. Fork this repository
 1. Create a free Heroku Account
 1. Create free Heroku app with your github fork
+
 
 ## Roadmap
 
