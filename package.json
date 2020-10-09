@@ -4,6 +4,7 @@
   "description": "A url shortner",
   "main": "index.js",
   "scripts": {
+    "start": "node ./server.js",
     "devStart": "nodemon server.js"
   },
   "repository": {
