@@ -1,6 +1,15 @@
 # YouRL
 
-A url shortner in MongoDB,Express and Node.js
+![Node.js CI](https://github.com/sunn-e/YouRL/workflows/Node.js%20CI/badge.svg)
+
+A url shortner web app in Node.js, Express and MongoDB.
+
+## Features
+
+- Convert any URL to short URL
+- Click counter
+- Timestamps of link submission
+- Super easy to deploy. Refere to deploy section for more.
 
 ## In Action
 
@@ -8,17 +17,15 @@ A url shortner in MongoDB,Express and Node.js
 
 ## dependencies
 
-###
+express- Web framework
 
-//npm init
+mongoose- To connect mongodb to our webapp
+
+ejs- Templating language to create views
+
+### Commands
 
 `npm i express mongoose ejs`
-
-express- web framework
-
-mongoose- for mongodb
-
-ejs- templating language to create views
 
 ### dev dependencies
 
@@ -27,7 +34,7 @@ ejs- templating language to create views
 //npm install -g nodemon
 
 `nodemon server.js`
-For refreshing server for every new change
+For refreshing server for every new change. Makes life easy.
 
 ### mongodb on windows
 
@@ -61,3 +68,4 @@ tip: Make sure you have admin access
 
 - A login Screen
 - protected routes with JWT
+- Heroku deploy button
