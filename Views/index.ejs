@@ -36,6 +36,7 @@
             <th>Full URL</th>
             <th>Shortened URL</th>
             <th>Total Clicks</th>
+            <th>Timestamp</th>
           </tr>
         </thead>
         <tbody>
@@ -47,6 +48,7 @@
             </td>
             <td><a href="<%= shortUrl.short %>"><%= shortUrl.short %> </a></td>
             <td><%= shortUrl.clicks %></td>
+            <td><%= shortUrl.createdAt;%></td>
           </tr>
           <% }) %>
         </tbody>

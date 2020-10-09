@@ -7,22 +7,27 @@ const shortId = require("shortid");
 
 //db schema
 // | fullurl | shorturl | clicks |
-const shortUrlSchema = new mongoose.Schema({
-  full: {
-    type: String,
-    required: true,
+const shortUrlSchema = new mongoose.Schema(
+  {
+    full: {
+      type: String,
+      required: true,
+    },
+    short: {
+      type: String,
+      required: true,
+      default: shortId.generate,
+    },
+    clicks: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
   },
-  short: {
-    type: String,
-    required: true,
-    default: shortId.generate,
-  },
-  clicks: {
-    type: Number,
-    required: true,
-    default: 0,
-  },
-});
+  { timestamps: true }
+);
+
+//var mySchema = new mongoose.Schema( {name: String}, {timestamps: true} );
 
 //now exporting this to hook model with database
 // model name, schema name
