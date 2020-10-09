@@ -1,8 +1,12 @@
 # YouRL
-
-![Node.js CI](https://github.com/sunn-e/YouRL/workflows/Node.js%20CI/badge.svg)
-
 A url shortner web app in Node.js, Express and MongoDB.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+![Node.js CI](https://github.com/sunn-e/YouRL/workflows/Node.js%20CI/badge.svg) 
+
+
+
 
 ## Features
 
