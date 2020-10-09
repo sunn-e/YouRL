@@ -33,3 +33,16 @@ make sure admin access
 - to start server
 
 "C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"
+
+## Deploy
+
+### Heroku
+
+1. Fork this repository
+1. Create a free Heroku Account
+1. Create free heroku app with your github fork
+
+## Roadmap
+
+- A login Screen
+- protected routes with JWT

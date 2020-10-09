@@ -12,7 +12,9 @@ app.use(express.urlencoded({ extended: false }));
 
 // to connect to database
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/db", {
+
+//App deploy or localhost mode connection to MongoDB
+mongoose.connect(process.env.MONGO_URL || "mongodb://localhost/db", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -46,7 +48,8 @@ app.get("/:shortUrl", async (req, res) => {
   //otherwise increase the click
   shortUrl.clicks++;
   //save the changes in table
-  shortUrl.save();
+  //can use `await` here but speed of redirect is more important
+  await shortUrl.save();
 
   //redirect the full link corresponding the short url we found
   res.redirect(shortUrl.full);
